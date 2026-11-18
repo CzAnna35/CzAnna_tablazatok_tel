@@ -34,7 +34,8 @@ article {
 
 aside {
     grid-area: as;
-        border: 1px solid rgb(211, 211, 211);
+    border: 1px solid rgb(211, 211, 211);
+    padding: 20px;
 }
 
 footer {
@@ -78,6 +79,26 @@ table {
     width: 100%;
 }
 
+.kartyak {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+}
+
+.kartya_bal {
+    transform: rotate(-8deg);
+}
+
+.kartya_jobb {
+    transform: rotate(7deg);
+}
+
+.kartya_bal, .kartya_jobb {
+    background-color: rgb(187, 223, 255);
+    padding: 5px 5px 15px 5px;
+    margin: 5px;
+}
+
 @media screen and (max-width: 1100px) {
     main {
         grid-template-columns: 1fr 2fr;
@@ -98,5 +119,8 @@ table {
             "ar"
             "as"
             "f";
+    }
+    .kartyak {
+        grid-template-columns: 1fr;
     }
 }

@@ -4,6 +4,8 @@ html {
 
 body {
     background-color: aliceblue;
+    max-width: 1000px;
+    margin: auto;
 }
 
 main {
@@ -74,4 +76,27 @@ tr:nth-child(odd) {
 
 table {
     width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "h h"
+            "n ar"
+            "as as"
+            "f f";
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "n"
+            "ar"
+            "as"
+            "f";
+    }
 }
